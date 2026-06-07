@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.tema-escuro {
+    background-color: #222;
+    color: #f4f4f9;
+}
+
+body.tema-escuro .card-projeto {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ff6b00;
+    color: white;
+}
+
+.navegacao {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacao a:hover {
+    text-decoration: underline;
+}
+
+button#btn-tema {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: white;
+    color: #ff6b00;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.conteudo-principal {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex-centro {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 800px;
+}
+
+.minha-foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff6b00;
+}
+
+
+.lista-projetos h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-projeto a {
+    margin-top: 15px;
+    color: #ff6b00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
